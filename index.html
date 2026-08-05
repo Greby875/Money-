@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greby — Shop Smart. Save More.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ INTRO ============ -->
+<div id="intro">
+  <canvas id="introCanvas"></canvas>
+  <div class="intro-glow"></div>
+  <div class="intro-content">
+    <img src="logo.png" alt="Greby" class="intro-logo">
+    <p class="intro-tagline">Shop smart. <span>Save more.</span></p>
+    <div class="intro-progress"><div class="intro-progress-fill"></div></div>
+    <button id="introSkip" class="intro-skip">Skip intro</button>
+  </div>
+</div>
+
+<!-- ============ SITE ============ -->
+<div id="site">
+
+  <div class="bg-glow">
+    <canvas id="siteCanvas"></canvas>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-brand">
+        <img src="logo.png" alt="Greby logo" class="nav-logo">
+      </a>
+      <nav class="nav-links">
+        <a href="#top">Home</a>
+        <a href="#features">Product</a>
+        <a href="#demo">About</a>
+        <a href="#community">Brands</a>
+        <a href="#join">Partners</a>
+      </nav>
+      <button class="nav-menu-btn" id="navBurger">Menu</button>
+    </div>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#top">Home</a>
+      <a href="#features">Product</a>
+      <a href="#demo">About</a>
+      <a href="#community">Brands</a>
+      <a href="#join">Partners</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-left reveal">
+      <p class="eyebrow">• SMART MARKETPLACE</p>
+      <h1 class="hero-title">The Best Price Is<br>Closer Than<br><span class="grad-text">You Think.</span></h1>
+      <p class="hero-sub">★★★★★ &nbsp; 3,000+ shoppers already save with Greby every week.</p>
+      <div class="hero-actions">
+        <button class="btn-primary">Chat With Us →</button>
+        <button class="btn-ghost">Our Products</button>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="orb-stage">
+        <div class="orb-core"></div>
+        <div class="orb-ring ring-a"></div>
+        <div class="orb-ring ring-b"></div>
+        <div class="orb-ring ring-c"></div>
+        <img src="logo.png" alt="Greby" class="orb-logo">
+      </div>
+      <div class="float-card card-a">
+        <p class="fc-title">Design to shop.</p>
+        <p class="fc-sub">Deals matched to you, built for one-tap checkout.</p>
+        <span class="fc-tag">FOCUS · 01 →</span>
+      </div>
+    </div>
+
+    <div class="hero-partners reveal">
+      <span>OUR PARTNERS</span>
+      <div class="partner-row">
+        <span>Zenlix</span><span>Bazaro</span><span>Wager</span><span>Crono</span><span>Mercury</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Compare deals</span><span>◆</span>
+      <span>Watch before you buy</span><span>◆</span>
+      <span>Message the maker</span><span>◆</span>
+      <span>Rate the real thing</span><span>◆</span>
+      <span>Priced in your currency</span><span>◆</span>
+      <span>Compare deals</span><span>◆</span>
+      <span>Watch before you buy</span><span>◆</span>
+      <span>Message the maker</span><span>◆</span>
+      <span>Rate the real thing</span><span>◆</span>
+      <span>Priced in your currency</span><span>◆</span>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <p class="section-eyebrow reveal">WHAT YOU GET</p>
+    <h2 class="section-title reveal">Built around how people actually shop</h2>
+    <p class="section-sub reveal">Nine small decisions that add up to a marketplace you can trust.</p>
+
+    <div class="feature-grid">
+      <article class="feature-card reveal"><div class="feature-icon">▶</div><h3>See it before you own it</h3><p>Short demo videos from sellers show exactly how a product looks and behaves in someone's hands.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">%</div><h3>The best price, surfaced</h3><p>The buy screen lines up listings across sellers and leads with the deepest live discount.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">★</div><h3>Ratings from real buyers</h3><p>Every purchase can be rated, so what rises to the top earned it — not the ad budget.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">🛒</div><h3>A cart that remembers you</h3><p>Build a profile once, and anything you favorite drops straight into your cart.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">✎</div><h3>Talk to the makers</h3><p>Reach out directly to makers and customizers to ask a question or request a tweak.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">◍</div><h3>A profile that's actually you</h3><p>Add your own photo, follow sellers you trust, build a shopping identity that carries with you.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">◆</div><h3>Smart deal alerts</h3><p>The moment you tap buy, Greby checks for a live promotion so you never miss a deal.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">🌐</div><h3>Priced where you are</h3><p>Every price converts automatically to your local currency based on your location.</p></article>
+      <article class="feature-card reveal"><div class="feature-icon">💬</div><h3>A comment thread on every item</h3><p>Ask sizing questions or read what everyone else already asked before you buy.</p></article>
+    </div>
+  </section>
+
+  <!-- DEMO -->
+  <section class="demo" id="demo">
+    <div class="demo-copy reveal">
+      <p class="section-eyebrow">WATCH IT WORK</p>
+      <h2 class="section-title">The buy button, rebuilt</h2>
+      <p class="section-sub">Tap once and Greby quietly compares, converts, and checks for deals — you just decide.</p>
+      <ul class="demo-list">
+        <li><span>01</span> Open a product — watch the real demo clip</li>
+        <li><span>02</span> Greby scans sellers for the lowest live price</li>
+        <li><span>03</span> Tap buy — deals and local pricing already applied</li>
+      </ul>
+    </div>
+    <div class="demo-visual reveal">
+      <div class="phone-mock">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-row shimmer"></div>
+          <div class="phone-row shimmer" style="width:70%"></div>
+          <div class="phone-card"><div class="phone-card-play">▶</div></div>
+          <div class="phone-price"><span>Best price found</span><strong>$24.90</strong></div>
+          <div class="phone-btn">Add to cart</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="community" id="community">
+    <p class="section-eyebrow reveal">FROM THE COMMENT THREADS</p>
+    <h2 class="section-title reveal">People talking to people, not just carts</h2>
+    <div class="quote-grid">
+      <blockquote class="quote-card reveal"><p>"Messaged the maker before ordering a custom size — had an answer in an hour."</p><cite>— Amara, verified buyer</cite></blockquote>
+      <blockquote class="quote-card reveal"><p>"The demo video saved me from a return. What you see is genuinely what you get."</p><cite>— Femi, verified buyer</cite></blockquote>
+      <blockquote class="quote-card reveal"><p>"Didn't realize I was overpaying until Greby flagged a better listing at checkout."</p><cite>— Chidinma, verified buyer</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="join" id="join">
+    <div class="join-inner reveal">
+      <h2>Shop smart. <span class="grad-text">Save more.</span></h2>
+      <p>Create your profile, follow the makers you trust, and let every price come to you already compared.</p>
+      <button class="btn-primary large">Get started — it's free</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="logo.png" alt="Greby" class="footer-logo">
+    <p>© 2026 Greby. Shop smart. Save more.</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+  </html>
+  
